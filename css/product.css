@@ -1,0 +1,116 @@
+#container-information-pokemon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+#container-information-pokemon h2{
+    font-family: 'Marhey', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+#container-pokemon-card-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Marhey', sans-serif;
+    margin: 0 auto;
+    width: 80%;
+    height: 60vh;
+}
+
+.pokemon-card-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Marhey', sans-serif;
+    margin: 0 auto;
+    width: 80%;
+    height: 60vh;
+}
+
+.div-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    font-size: 2em;
+}
+
+.div-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    font-size: 1.5em;
+    font-weight: 300
+}
+
+.add-to-cart-button{
+    border-radius: 10px;
+    border: 1px solid #333;
+    padding: 5px;
+    font-family: 'Marhey', sans-serif;
+    margin-top: 10px;
+    height: 15%;
+    width: 50%;
+    font-size: 1em;
+    font-weight: 400;
+    transition: 0.8s;
+}
+
+.add-to-cart-button:hover{
+    color: #ff9797;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px){
+    #container-pokemon-card-product{
+        width: 100%;
+        height: 100%;
+    }
+
+    .pokemon-card-product{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .div-one{
+        width: 100%;
+        height: 100%;
+    }
+
+    .div-two{
+        width: 100%;
+        height: 100%;
+    }
+
+    .add-to-cart-button{
+        width: 100%;
+        height: 100%;
+    }
+}

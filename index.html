@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon E-commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="img/icons8-pokéball-100.png" alt="pokeball"><a href="index.html">Home</a></li>
+                <li><img src="img/icons8-oeuf-de-dinosaure-100.png" alt="dinosaure"><a href="product.html">Pokemon</a></li>
+                <li><img src="img/icons8-panier-96.png" alt="panier"><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="container-search-pokemon">
+
+            <h2>Recherche un pokemon :</h2>
+
+            <div id="container-search-bar">
+
+                <input id="input-search-pokemon" type="text" placeholder="Nom du Pokemon">
+                <button id="button-search-pokemon" type="button">Chercher</button>
+
+            </div>
+
+            <div id="container-search-pokemon-result" class="hidden">
+                <!-- Affichage du pokemon recherché -->
+            </div>
+
+        </div>
+        
+        <div id="container-list-pokemon">
+            <h2> Apercu de Pokemon :</h2>
+            <div id="container-list-pokemon-random">
+                <!-- Liste random de 20 pokemons ici -->
+            </div>
+        </div>
+
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>

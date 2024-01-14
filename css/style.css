@@ -1,0 +1,270 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;1,100&display=swap');
+@import url('product.css');
+@import url('cart.css');
+@import url('animation.css');
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Fin du reset */
+
+body{
+    background: white url(../img/body_bg.png);
+}
+
+header {
+    background-color: #333;
+    overflow: hidden;
+    padding: 20px 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Marhey', sans-serif;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+nav ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+    width: 33%;
+}
+
+nav ul li :hover{
+    cursor: pointer;
+}
+
+nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        transition: 0.5s
+}
+
+nav ul li a:hover{
+    color: #ff9797;
+}
+
+nav ul li img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#container-search-pokemon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container-search-pokemon h2{
+    font-family: 'Marhey', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+#container-search-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-search-bar input{
+    width: 50%;
+    border-radius: 10px;
+    border: 1px solid #333;
+    padding: 5px;
+    font-family: 'Marhey', sans-serif;
+}
+
+#container-search-bar button{
+    border-radius: 10px;
+    border: 1px solid #333;
+    padding: 5px;
+    font-family: 'Marhey', sans-serif;
+    margin-left: 10px;
+    transition: 0.8s;
+}
+
+#container-search-bar button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#container-search-pokemon-result{
+    margin-top: 2vh;
+    width: 100%;
+}
+
+#container-list-pokemon{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+#container-list-pokemon h2{
+    font-family: 'Marhey', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#container-list-pokemon-random{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Marhey', sans-serif;
+}
+
+.view-product-button{
+    border-radius: 10px;
+    border: 1px solid #333;
+    padding: 5px;
+    font-family: 'Marhey', sans-serif;
+    margin-top: 10px;
+    transition: 0.8s;
+}
+
+.view-product-button:hover{
+    cursor: pointer;
+    color: #ff9797;
+    transform: scale(1.1);
+}
+
+.pokemon-card-result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Marhey', sans-serif;
+    margin: 0 auto;
+    width: 15%;
+}
+
+/* Usefull classe */
+
+.hidden{
+    display: none;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+    header{
+        width: 100%;
+    }
+
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container-search-pokemon h2{
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    #container-list-pokemon-random {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}

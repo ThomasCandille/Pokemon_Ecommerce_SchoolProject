@@ -1,0 +1,84 @@
+#container-cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+#container-cart h2{
+    font-family: 'Marhey', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+#container-cart-pokemon{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Marhey', sans-serif;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.pokemon-card-cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Marhey', sans-serif;
+    margin: 0 auto;
+    width: 40%;
+    height: 10vh;
+}
+
+#container-button-cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#remove-all-pokemon{
+    border-radius: 10px;
+    border: 1px solid #333;
+    padding: 5px;
+    font-family: 'Marhey', sans-serif;
+    margin-top: 10px;
+    transition: 0.8s;
+}
+
+#remove-all-pokemon:hover{
+    cursor: pointer;
+    color: #ff9797;
+    transform: scale(1.1);
+}
+
+#cart-button-valider{
+    border-radius: 10px;
+    border: 1px solid #333;
+    padding: 5px;
+    font-family: 'Marhey', sans-serif;
+    margin-top: 10px;
+    transition: 0.8s;
+}
+
+#cart-button-valider:hover{
+    cursor: pointer;
+    color: #ff9797;
+    transform: scale(1.1);
+}
